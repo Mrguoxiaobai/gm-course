@@ -8,7 +8,7 @@
               <h1>
                 <i class="ace-icon fa fa-leaf green"></i>
                 <span class="red">STJKS</span>
-                <span class="white" id="id-text2"> 管理系统登录</span>
+                <span class="green" id="id-text2"> 管理系统登录</span>
               </h1>
             </div>
 
@@ -43,7 +43,9 @@
                             <input type="checkbox" class="ace" />
                             <span class="lbl"> 记住我</span>
                           </label>
-                          <button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+                          <button type="button"
+                                  class="width-35 pull-right btn btn-sm btn-primary"
+                                  @click="login()">
                             <i class="ace-icon fa fa-key"></i>
                             <span class="bigger-110">登录</span>
                           </button>
@@ -62,10 +64,17 @@
   </div><!-- /.main-container -->
 </template>
 
-<script>
+<script >
 $('body').attr('class', 'login-layout light-login');
+
 export default {
-  name: 'login'
+  name: 'login',
+  methods:{
+    login(){
+      this.$router.push("/admin")
+    }
+  }
+
 }
 window.onload = function () {
   //配置

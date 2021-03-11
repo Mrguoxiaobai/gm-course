@@ -179,3 +179,4 @@ var CanvasParticle = (function(){
 	}
 	return canvasInit;
 })();
+

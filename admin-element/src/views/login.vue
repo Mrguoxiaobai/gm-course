@@ -8,7 +8,7 @@
           </el-input>
         </el-form-item>
         <el-form-item>
-          <el-input v-model='password' type="password"  placeholder="密码">
+          <el-input v-model='password' type="password" placeholder="密码">
           </el-input>
         </el-form-item>
         <el-form-item>
@@ -39,7 +39,7 @@
 export default {
   name: 'login',
   data() {
-    return{
+    return {
       username: '',
       password: '',
       code: '',
@@ -89,8 +89,8 @@ export default {
    }*/
 
 
-}
 
+}
 window.onload = function () {
   //配置
   var config = {
@@ -106,12 +106,12 @@ window.onload = function () {
     max_conn: 10 	//点到点最大连接数
   };
   //调用
-  CanvasParticle(config);
+    CanvasParticle(config);
 }
 
 </script>
 
-<style>
+<style >
 .login {
   display: flex;
   justify-content: center;
@@ -120,26 +120,31 @@ window.onload = function () {
   background-size: cover;
   margin: 9% auto;
 }
+
 .title {
   margin: 0px auto 30px auto;
   text-align: center;
   color: #707070;
 }
+
 .login-form {
   border-radius: 6px;
   background: #ffffff;
   width: 385px;
   padding: 25px 25px 5px 25px;
 }
+
 input {
   height: 38px;
 }
+
 .login-code {
   width: 33%;
   display: inline-block;
   height: 38px;
   float: right;
 }
+
 img {
   cursor: pointer;
   vertical-align: middle
