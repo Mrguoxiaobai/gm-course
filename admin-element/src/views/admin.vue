@@ -3,8 +3,8 @@
     <div id="LAY_app">
       <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
-          <!-- 头部区域 -->
-<!--          <ul class="layui-nav layui-layout-left">
+<!--           头部区域 -->
+          <ul class="layui-nav layui-layout-left">
             <li class="layui-nav-item layadmin-flexible" lay-unselect>
               <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
                 <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
@@ -23,18 +23,18 @@
             <li class="layui-nav-item layui-hide-xs" lay-unselect>
               <input type="text" placeholder="搜索..." autocomplete="off" class="layui-input layui-input-search" layadmin-event="serach" lay-action="template/search.html?keywords=">
             </li>
-          </ul>-->
+          </ul>
           <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
 
-<!--            <li class="layui-nav-item" lay-unselect>
+            <li class="layui-nav-item" lay-unselect>
               <a lay-href="app/message/index.html" layadmin-event="message" lay-text="消息中心">
                 <i class="layui-icon layui-icon-notice"></i>
 
-                &lt;!&ndash; 如果有新消息，则显示小圆点 &ndash;&gt;
+                <!-- 如果有新消息，则显示小圆点 -->
                 <span class="layui-badge-dot"></span>
               </a>
-            </li>-->
-<!--            <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            </li>
+            <li class="layui-nav-item layui-hide-xs" lay-unselect>
               <a href="javascript:;" layadmin-event="theme">
                 <i class="layui-icon layui-icon-theme"></i>
               </a>
@@ -48,7 +48,7 @@
               <a href="javascript:;" layadmin-event="fullscreen">
                 <i class="layui-icon layui-icon-screen-full"></i>
               </a>
-            </li>-->
+            </li>
             <li class="layui-nav-item" lay-unselect>
               <a href="javascript:;">
                 <cite>贤心</cite>
