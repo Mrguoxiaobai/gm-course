@@ -48,8 +48,21 @@ export default {
     }
 
   },
-  /* methods: {
-     getCode :function() {
+/*  beforeRouteEnter(to, from, next) {
+    document.querySelector('body').setAttribute('style', 'margin: 0 auto; width: 100%; max-width: 750px;min-width: 300px; background:#171b2a; overflow-x: hidden;height: 100%;');
+   next()
+  },
+  beforeRouteLeave(to, from, next) {
+  document.querySelector('body').setAttribute('style', '')
+    next()
+  },*/
+
+
+   methods: {
+     login:function (){
+       this.$router.push('/admin');
+     }
+     /*getCode :function() {
        $.ajax({
          url: 'code',
          type: 'GET',
@@ -82,33 +95,29 @@ export default {
            }
          }
        })
-     }
+     }*/
    },
-   mounted: function () {
-     this.getCode();
-   }*/
-
-
-
+  mounted: function () {
+    //this.getCode();
+    window.onload = function () {
+      //配置
+      var config = {
+        vx: 4,	//小球x轴速度,正为右，负为左
+        vy: 4,	//小球y轴速度
+        height: 2,	//小球高宽，其实为正方形，所以不宜太大
+        width: 2,
+        count: 600,		//点个数
+        color: "64,158,255", 	//点颜色
+        stroke: "64,158,255", 	//线条颜色
+        dist: 6000, 	//点吸附距离
+        e_dist: 20000, 	//鼠标吸附加速距离
+        max_conn: 10 	//点到点最大连接数
+      };
+      //调用
+      CanvasParticle(config);
+    }
+  }
 }
-window.onload = function () {
-  //配置
-  var config = {
-    vx: 4,	//小球x轴速度,正为右，负为左
-    vy: 4,	//小球y轴速度
-    height: 2,	//小球高宽，其实为正方形，所以不宜太大
-    width: 2,
-    count: 600,		//点个数
-    color: "64,158,255", 	//点颜色
-    stroke: "64,158,255", 	//线条颜色
-    dist: 6000, 	//点吸附距离
-    e_dist: 20000, 	//鼠标吸附加速距离
-    max_conn: 10 	//点到点最大连接数
-  };
-  //调用
-    CanvasParticle(config);
-}
-
 </script>
 
 <style >
