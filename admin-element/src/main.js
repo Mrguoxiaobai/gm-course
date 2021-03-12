@@ -7,7 +7,6 @@ import vCharts from 'v-charts';
 Vue.use(vCharts);
 Vue.use(ElementUI);
 Vue.config.productionTip = false
-
 new Vue({
   router,
   render: h => h(App),
